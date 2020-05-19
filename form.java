@@ -12,20 +12,20 @@ public class form extends HttpServlet {
     * index should be zero on the first call
     * truthVals starts as an empty array of integers of size N
     */
-    public void printTruthTable(int N, int index, int[] truthVals) {
+    // public void printTruthTable(int N, int index, int[] truthVals) {
         
-        if (index == N) {
-           for (i = 0; i < N; i++)
-              print(truthVals[i] + " ");
-           print(newline);
-        } 
-        else {
-           for (i = 0; i < 2; i++) {
-              truthVals[index] = i;
-              printTruthTable(N, index + 1, truthVals);
-           }
-        }
-    } 
+    //     if (index == N) {
+    //        for (i = 0; i < N; i++)
+    //           print(truthVals[i] + " ");
+    //        print(newline);
+    //     } 
+    //     else {
+    //        for (i = 0; i < 2; i++) {
+    //           truthVals[index] = i;
+    //           printTruthTable(N, index + 1, truthVals);
+    //        }
+    //     }
+    // } 
 
     public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       
@@ -63,12 +63,12 @@ public class form extends HttpServlet {
         out.println(" <tr bgcolor=\"#ffad00\">");
         out.println("  <th>variables <th>true");
 
-        Enumeration headerNames = request.getHeaderNames();
-        while (headerNames.hasMoreElements()) {
-            String headerName = (String) headerNames.nextElement();
-            out.println(" <tr><td>" + headerName);
-            out.println("     <td>" + request.getHeader (headerName) + "</tr>");
-        }
+        // Enumeration headerNames = request.getHeaderNames();
+        // while (headerNames.hasMoreElements()) {
+        //     String headerName = (String) headerNames.nextElement();
+        //     out.println(" <tr><td>" + headerName);
+        //     out.println("     <td>" + request.getHeader (headerName) + "</tr>");
+        // }
    
    
         out.println ("</table>");
