@@ -29,13 +29,13 @@ public class form extends HttpServlet {
 
     public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter(); 
+        // response.setContentType("text/html");
+        // PrintWriter out = response.getWriter(); 
     
     }
 
 
-    public void doGet()throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
