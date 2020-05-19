@@ -1,1 +1,1 @@
-web: sh target/bin/program.id
+web: sh target/bin/webapp

@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>LK Fountains at GMU</title>
+    <link rel=stylesheet href="SWE432-Assn5-styles.css" type="text/css">
+    <script type="text/javascript" src="SWE432-Assn5-script.js"></script>
+</head>
+
+<body>
+    <form method="POST" action="https://cs.gmu.edu:8443/offutt/servlet/formHandler">
+
+        <h1 class="title-text">Innovation Hall Water Fountains</h1>
+
+        <h2>Floor</h2>
+        <span>Which floor's fountains are you rating?</span></br>
+        <input type="radio" id="first" name="floor" value="first">
+        <label for="first">First</label><br>
+        <input type="radio" id="second" name="floor" value="second">
+        <label for="second">Second</label><br>
+        <input type="radio" id="third" name="floor" value="third">
+        <label for="third">Third</label><br>
+        <input type="radio" id="fourth" name="floor" value="fourth">
+        <label for="fourth">Fourth</label><br>
+
+        <h2>Temperature</h2>
+        <span>How would you rate the temperature of the water?</span><br>
+        <input type="radio" id="ice" name="temperature" value="ice">
+        <label for="ice">Ice Cold</label><br>
+
+        <input type="radio" id="mostlycold" name="temperature" value="cold">
+        <label for="cold">Mostly Cold</label><br>
+
+        <input type="radio" id="roomtemp" name="temperature" value="roomtemp">
+        <label for="roomtemp">Room Temperature</label><br>
+
+        <input type="radio" id="warm" name="temperature" value="warm">
+        <label for="warm">Warm</label><br>
+
+
+        <h2>Stream</h2>
+        <span>How would you rate the speed of the stream of water?</span><br>
+        <input type="radio" id="Fast" name="stream" value="Fast">
+        <label for="Fast">Fast</label><br>
+
+        <input type="radio" id="Moderate" name="stream" value="Moderate">
+        <label for="Moderate">Moderate</label><br>
+
+        <input type="radio" id="Slow" name="stream" value="Slow">
+        <label for="Slow">Slow</label><br>
+
+        <h2>Location</h2>
+        <span>How would you rate how convenient a place this fountain is in?</span><br>
+        <input type="radio" id="Convenient" name="location" value="Convenient">
+        <label for="Convenient">Convenient</label><br>
+        <input type="radio" id="Not Convenient" name="location" value="Not Convenient">
+        <label for="Not Convenient">Not Convenient</label><br>
+        <input class="submit-btn" type="submit" onclick="alertFunc()">
+    </form>
+    <p id="summary" onmouseout="removeCollabSumm()" onmouseover="showCollabSumm()">Collaboration Summary: <br></p>
+</body>
+
+</html>
